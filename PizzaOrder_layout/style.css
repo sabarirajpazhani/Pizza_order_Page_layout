@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.container {
+  width: min(100%, 580px);
+  margin: 0 auto;
+  height: 200px;
+  padding: 0 20px 0 20px;
+}
+body {
+  min-height: 100vh;
+  background-color: #f4e7de;
+}
+.main {
+  background-color: white;
+  max-width: 480px;
+  min-width: 200px;
+  height: 30rem;
+  margin: 10rem auto;
+  border-radius: 35px;
+  position: relative;
+  /* padding-top: px; */
+}
+
+.main .details {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  translate: -50% -50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.blank {
+  background-color: #ffd151;
+  min-width: min(100%, 480px);
+  height: 30rem;
+  position: absolute;
+  top: -115px;
+  left: 0;
+  z-index: -1;
+  border-radius: 35px;
+}
+
+.pizza_image {
+  width: 145px;
+  transform: rotate(0deg);
+  animation: pizza 6s linear 0s infinite both;
+}
+
+@keyframes pizza {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.quantity {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 35px;
+  margin: 0 auto;
+}
+
+.quantity h4 {
+  margin-top: 150px;
+  color: rgb(48, 48, 48);
+}
+
+.count_section {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.quantity .count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.count .menus,
+.count .plus {
+  background-color: #f54747;
+  width: 25px;
+  height: 22px;
+  text-align: center;
+  border-radius: 3px;
+  font-size: large;
+  color: white;
+  cursor: pointer;
+}
+
+.button{
+    margin: 30px 30px;
+}
+.button button{
+    padding: 9px 15px;
+    border: none;
+    background-color: #f54747;
+    color: white;
+    border-radius: 7px;
+}
+
+.button button i{
+    transform: rotate(135deg);
+}
+.button button span{
+    margin-left: 3px;
+}
+
+.bill{
+    /* border: 2px solid #eeeded; */
+    width: 86%;
+    padding: 6px 0;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #eeeded;
+    color: rgb(48, 48, 48);
+}
+
+.bill > div{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+
+.checkout{
+   width: 86%;
+   
+   margin-left:auto;
+   margin-right: auto;
+   margin-top: min(30px,100%);
+}
+
+.checkout button{
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px;
+    background-color: #f54747;
+    color: white;
+    font-weight: bold;
+}
